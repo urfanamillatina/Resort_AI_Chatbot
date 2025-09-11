@@ -29,11 +29,21 @@
       bottom: auto !important;
       right: auto !important;
     }
+    #chatbot {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 600px;
+      z-index: 9999;
+    }
 
   </style>
 </head>
   <body>
     <canvas id="confetti-canvas"></canvas>
+    <div id="chatbot"></div>
     <div id="flat-chat"></div>
     <div id="voiceflow-chat-frame"></div>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
@@ -60,7 +70,8 @@
               name: 'Demo User',
             },
             render: {
-              mode: 'overlay',
+              mode: 'embedded',
+              target: document.getElementById('chatbot'),
             },
             autostart: false,
             allowDangerousHTML: true,
