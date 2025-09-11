@@ -70,24 +70,24 @@
       s.parentNode.insertBefore(v, s);
     })(document, 'script');
   </script>
-
-  <!-- Reposition launcher (icon) into center -->
   <script>
-    function repositionLauncher() {
-      const iframe = document.querySelector('iframe[src*="voiceflow"]');
-      if (iframe) {
-        iframe.style.position = "fixed";
-        iframe.style.top = "50%";
-        iframe.style.left = "50%";
-        iframe.style.transform = "translate(-50%, -50%) scale(2)"; // bigger
-        iframe.style.width = "90px"; 
-        iframe.style.height = "90px";
-        iframe.style.zIndex = "99999";
-      } else {
-        setTimeout(repositionLauncher, 500);
-      }
-    }
-    repositionLauncher();
-  </script>
+        function repositionLauncher() {
+            const iframe = document.querySelector('iframe[src*="voiceflow"]');
+            if (iframe) {
+            iframe.style.position = "fixed";
+            iframe.style.top = "50%";
+            iframe.style.left = "50%";
+            iframe.style.transform = "translate(-50%, -50%) scale(2)"; // bigger
+            iframe.style.width = "90px";
+            iframe.style.height = "90px";
+            iframe.style.zIndex = "99999";
+            }
+        }
+        
+        repositionLauncher();
+        
+        const observer = new MutationObserver(() => repositionLauncher());
+        observer.observe(document.body, { childList: true, subtree: true });
+    </script>
 </body>
 </html>
