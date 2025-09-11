@@ -6,7 +6,7 @@
   <title>Chatbot</title>
 
   <style>
-    /* Centered chatbox when opened */
+    /* Center the opened chatbox */
     .vf-chat {
       position: fixed !important;
       top: 50% !important;
@@ -17,6 +17,19 @@
       max-height: 80vh !important;
       max-width: 90vw !important;
       z-index: 9999 !important;
+    }
+
+    /* Force the floating launcher bubble into the center */
+    iframe[src*="voiceflow"] {
+      position: fixed !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) scale(2) !important; /* scale makes it bigger */
+      width: 90px !important;
+      height: 90px !important;
+      z-index: 99999 !important;
+      bottom: auto !important;
+      right: auto !important;
     }
   </style>
 </head>
@@ -47,7 +60,7 @@
           user: {
             name: 'Demo User',
           },
-          render: { mode: 'overlay' }, // keep overlay for launcher
+          render: { mode: 'overlay' }, // needed for launcher bubble
           autostart: false,
           allowDangerousHTML: true,
           assistant: {
@@ -70,24 +83,5 @@
       s.parentNode.insertBefore(v, s);
     })(document, 'script');
   </script>
-  <script>
-        function repositionLauncher() {
-            const iframe = document.querySelector('iframe[src*="voiceflow"]');
-            if (iframe) {
-            iframe.style.position = "fixed";
-            iframe.style.top = "50%";
-            iframe.style.left = "50%";
-            iframe.style.transform = "translate(-50%, -50%) scale(2)"; // bigger
-            iframe.style.width = "90px";
-            iframe.style.height = "90px";
-            iframe.style.zIndex = "99999";
-            }
-        }
-        
-        repositionLauncher();
-        
-        const observer = new MutationObserver(() => repositionLauncher());
-        observer.observe(document.body, { childList: true, subtree: true });
-    </script>
 </body>
 </html>
