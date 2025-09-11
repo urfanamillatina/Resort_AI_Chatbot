@@ -29,7 +29,7 @@
     <canvas id="confetti-canvas"></canvas>
     <div id="flat-chat"></div>
     <div id="voiceflow-chat-frame"></div>
-    <script src="/config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script type="module">
       import { VideoExtension,
                 TimerExtension,
@@ -45,12 +45,10 @@
         var v = d.createElement(t),
           s = d.getElementsByTagName(t)[0];
         v.onload = function () {
-          const { projectID, versionID, url } = window.VOICEFLOW_CONFIG;
-      
           window.voiceflow.chat.load({
-            verify: { projectID },
-            url,
-            versionID,
+            verify: { projectID: '66b096272bfb4f7068cd070e' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
             user: {
               name: 'Demo User',
             },
