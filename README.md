@@ -85,6 +85,10 @@ MU Bot has three  main workflows which are:
 - Make.com was the integration platform that fetched information from Airtable and using webhook to send booking confirmation emails via Gmail
 - Vercel is used as demo before deployment.
 
+<p align="center">
+  <img src="./assets/makecom.png" alt="make flow" width="500"/><br/>
+  <em>Integration Flow of Different Scenarios with Make.com </em>
+</p>
 
 
 ## Email Confirmation
