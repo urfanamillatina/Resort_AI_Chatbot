@@ -18,8 +18,8 @@
 
 
 <p align="center">
-    <img src="./assets/website.png" width="410"/>
-  <img src="./assets/chatsample.png" alt="Chat sample" width="450"/><br/>
+    <img src="./assets/website.png" width="380"/>
+  <img src="./assets/chatsample.png" alt="Chat sample" width="420"/><br/>
   <em>Example of MU Bot Designs</em>
 </p>
 
@@ -94,8 +94,8 @@ Whatever the completed action taken by the user is, whether making new reservati
 
 
 <p align="center">
-    <img src="./assets/new_booking.png" alt="The workflow" width="500"/>
-  <img src="./assets/reschedule.png" alt="The workflow" width="407"/><br/>
+    <img src="./assets/new_booking.png" alt="The workflow" width="450"/>
+  <img src="./assets/reschedule.png" alt="The workflow" width="365"/><br/>
   <em>Automated Email Confirmation </em>
 </p>
 
