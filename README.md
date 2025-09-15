@@ -18,8 +18,8 @@
 
 
 <p align="center">
-    <img src="./assets/website.png" width="320"/>
-  <img src="./assets/chatsample.png" alt="Chat sample" width="350"/><br/>
+    <img src="./assets/website.png" width="350"/>
+  <img src="./assets/chatsample.png" alt="Chat sample" width="370"/><br/>
   <em>Example of MU Bot Designs</em>
 </p>
 
