@@ -87,10 +87,13 @@ MU Bot has three  main workflows which are:
 
 ## Email Confirmation
 
+
 Whatever the completed action taken by the user is, whether making new reservation, reschedule, or cancellation, the user will get email confirmation, like shown below:
+
 
 <p align="center">
     <img src="./assets/new_booking.png" alt="The workflow" width="380"/>
   <img src="./assets/reschedule.png" alt="The workflow" width="310"/><br/>
   <em>Automated Email Confirmation </em>
 </p>
+
