@@ -83,6 +83,8 @@ MU Bot has three  main workflows which are:
 - Voiceflow was as the framework where AI chatbot agent was developed
 - Airtable served as guests database where guests and reservation details stored and retrieved through API
 - Make.com was the integration platform that fetched information from Airtable and using webhook to send booking confirmation emails via Gmail
+- Vercel is used as demo before deployment.
+
 
 
 ## Email Confirmation
